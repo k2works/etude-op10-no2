@@ -70,6 +70,13 @@ webpack --config webpack.config.js
 ```
 webpack
 ```
+
+#### Using webpack with npm
+
+```
+npm run build
+```
+
 ### Why webpack?
 
 ## アプリケーション配置

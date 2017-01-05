@@ -88,7 +88,10 @@ webpackは他のツール(Make,Grunt,Gulp)とくらべてモジュラーバン�
 
 バンドラーはタスクランナーと一緒に使えます。構築の問題をバンドラーで解決する一方でタスクランナーの高レベルの恩恵を受けることができます。grunt-webpackやgulp-webpackはその良い例です。
 
+### Development
+
 ## アプリケーション配置
 
 # 参照 #
-+ [webpack](https://webpack.js.org/get-started/)
++ [Getting Started](https://webpack.js.org/get-started/)
++ [Development](https://webpack.js.org/guides/development/)

@@ -101,6 +101,25 @@ npm i serve -g
 serve
 ```
 
+#### webpack-dev-server
+
+```
+npm i webpack-dev-server -g
+npm install webpack-dev-server --save-dev
+```
+`package.json`にスクリプトを追加して
+```
+npm start
+```
+`http://192.168.30.1:3000/webpack-dev-server/`で動作を確認する
+
+
+#### webpack-dev-middleware
+
+```
+npm install express webpack-dev-middleware --save-dev
+```
+
 ## アプリケーション配置
 
 # 参照 #

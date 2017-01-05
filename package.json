@@ -8,11 +8,13 @@
     "webpack": "^2.2.0-rc.3"
   },
   "devDependencies": {
-    "webpack": "^2.2.0-rc.3"
+    "webpack": "^2.2.0-rc.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --host 0.0.0.0 --public 192.168.30.1:3000 --watch-poll"
   },
   "repository": {
     "type": "git",

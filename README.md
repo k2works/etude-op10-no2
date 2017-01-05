@@ -91,6 +91,16 @@ webpackは他のツール(Make,Grunt,Gulp)とくらべてモジュラーバン�
 ### Development
 #### Source Maps
 
+#### webpack Watch Mode
+```
+webpack --progress --watch
+```
+
+```
+npm i serve -g
+serve
+```
+
 ## アプリケーション配置
 
 # 参照 #

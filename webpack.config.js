@@ -4,6 +4,13 @@ module.exports = {
     filename: 'bundle.js',
     path: '/dist'
   },
+  module: {
+    rules: [{
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: 'css-loader'
+    }]
+  },
   // Configuration for dev server
   devServer: {
     contentBase: './',

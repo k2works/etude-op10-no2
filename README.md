@@ -127,8 +127,15 @@ node web.js
 
 ### Code Splitting - CSS
 
-#### Using css-loader
+#### Using css-loaders
+```
+npm install css-loader --save-dev
+```
 
+#### Using extract-text-webpack-plugin - ExtractTextPlugin
+```
+npm i --save-dev extract-text-webpack-plugin
+```
 
 ## アプリケーション配置
 

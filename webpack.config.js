@@ -1,3 +1,4 @@
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   entry: './app/index.js',
   output: {
@@ -8,7 +9,7 @@ module.exports = {
     rules: [{
         test: /\.css$/,
         exclude: /node_modules/,
-        loader: 'css-loader'
+        loader: ExtractTextPlugin.extract('css-loader?sourceMap') //Can be used without sourcemaps too.
     }]
   },
   // Configuration for dev server
@@ -16,5 +17,8 @@ module.exports = {
     contentBase: './',
     port: 3000
   },
-  devtool: "cheap-eval-source-map"
+  devtool: 'source-map',
+  plugins: [
+      new ExtractTextPlugin({ filename: 'bundle.css', disable: false, allChunks: true })
+  ]
 }

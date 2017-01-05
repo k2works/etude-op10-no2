@@ -16,7 +16,24 @@ webpackを使ったNodeアプリケーションの開発
 
 # 構成 #
 ## アプリケーション環境構築
+### Vagrantセットアップ
+```
+vagrant up
+vagrant ssh
+cd /vagrant/
+```
+
 ### Installation
+#### Global INstallation
+```
+npm install webpack@beta -g
+```
+#### Local Installation
+```
+npm install webpack@beta --save-dev
+
+npm install webpack@<version> --save-dev
+```
 
 ## アプリケーション開発
 ### Getting Started  

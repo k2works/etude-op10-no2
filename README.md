@@ -47,7 +47,7 @@ npm install --save lodash
 ```
 
 ```
-cd /vagrant
+cd /vagrant/
 mkdir app
 touch app/index.js
 touch index.html
@@ -57,6 +57,19 @@ touch index.html
 webpack app/index.js dist/bundle.js
 ```
 
+#### Using webpack with a config
+```
+cd /vagrant/
+touch webpack.config.js
+```
+
+```
+webpack --config webpack.config.js
+```
+
+```
+webpack
+```
 ### Why webpack?
 
 ## アプリケーション配置

@@ -46,12 +46,15 @@ npm install --save-dev webpack@beta
 npm install --save lodash
 ```
 
-`app/index.js`
 ```
 cd /vagrant
 mkdir app
 touch app/index.js
 touch index.html
+```
+
+```
+webpack app/index.js dist/bundle.js
 ```
 
 ### Why webpack?

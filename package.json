@@ -1,0 +1,27 @@
+{
+  "name": "vagrant",
+  "version": "1.0.0",
+  "description": "Étude Op. 10, No. 2 Chromatique ===================",
+  "main": "index.js",
+  "dependencies": {
+    "loadash": "0.0.1",
+    "webpack": "^2.2.0-rc.3"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.0-rc.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://k2works@github.com/k2works/etude-op10-no2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2works/etude-op10-no2/issues"
+  },
+  "homepage": "https://github.com/k2works/etude-op10-no2#readme"
+}

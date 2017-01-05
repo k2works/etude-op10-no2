@@ -37,6 +37,22 @@ npm install webpack@<version> --save-dev
 
 ## アプリケーション開発
 ### Getting Started  
+#### Creating a bundle
+```
+cd /vagrant/
+npm init -y
+npm install --save-dev webpack@beta
+./node_modules/.bin/webpack --help
+npm install --save lodash
+```
+
+`app/index.js`
+```
+cd /vagrant
+mkdir app
+touch app/index.js
+touch index.html
+```
 
 ### Why webpack?
 

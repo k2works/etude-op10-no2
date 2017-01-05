@@ -125,8 +125,11 @@ node web.js
 ```
 `http://192.168.30.1:3000`で動作を確認する
 
+### Code Splitting - CSS
+
 ## アプリケーション配置
 
 # 参照 #
 + [Getting Started](https://webpack.js.org/get-started/)
 + [Development](https://webpack.js.org/guides/development/)
++ [Code Splitting - CSS](https://webpack.js.org/guides/code-splitting-css/)

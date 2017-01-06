@@ -163,6 +163,13 @@ npm run build
 ```
 
 ## アプリケーション配置
+ビルドした内容をコミットしてHerokuにデプロイする
+```
+heroku crate op10-no2
+git push heroku master
+```
+
+`https://op10-no2.herokuapp.com/`に接続して動作を確認する
 
 # 参照 #
 + [Getting Started](https://webpack.js.org/get-started/)

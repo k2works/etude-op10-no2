@@ -1,10 +1,16 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  devtool: 'eval',
+
   entry: './app/index.js',
+
   output: {
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
-    path: '/dist'
+    publicPath: '/public/'
   },
   // Configuration for dev server
   devServer: {
@@ -23,7 +29,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader?sourceMap')
     　},
-      {      
+      {
       test: /\.(jpg|png)$/,
       loaders: 'url-loader'
       },
@@ -37,7 +43,6 @@ module.exports = {
       }
   　]
   },
-  devtool: 'source-map',
   plugins: [
       new ExtractTextPlugin({ filename: 'bundle.css', disable: false, allChunks: true })
   ]

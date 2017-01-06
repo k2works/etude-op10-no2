@@ -154,6 +154,14 @@ npm install --save-dev file-loader url-loader
 
 ### Building for Production
 
+```
+npm install --save-dev webpack-manifest-plugin
+```
+npmスクリプトを追加
+```
+npm run build
+```
+
 ## アプリケーション配置
 
 # 参照 #
@@ -166,3 +174,4 @@ npm install --save-dev file-loader url-loader
 + [BABEL](https://github.com/babel/babel)
 + [babel-loader](https://github.com/babel/babel-loader)
 + [Building for Production](https://webpack.js.org/guides/production-build/)
++ [Deploying your React app to Heroku with Webpack](http://ditrospecta.com/javascript/react/es6/webpack/heroku/2015/08/08/deploying-react-webpack-heroku.html)

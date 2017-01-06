@@ -4,15 +4,14 @@
   "description": "Étude Op. 10, No. 2 Chromatique ===================",
   "main": "index.js",
   "dependencies": {
-    "loadash": "0.0.1",
-    "webpack": "^2.2.0-rc.3"
+    "express": "^4.14.0",
+    "loadash": "0.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "css-loader": "^0.26.1",
-    "express": "^4.14.0",
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "file-loader": "^0.9.0",
     "node-sass": "^4.1.1",
@@ -21,12 +20,14 @@
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0-rc.3",
     "webpack-dev-middleware": "^1.9.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "webpack-manifest-plugin": "^1.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --host 0.0.0.0 --public 192.168.30.1:3000 --watch-poll"
+    "build": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
+    "start": "node ./app/app.js",
+    "start:dev": "webpack-dev-server --host 0.0.0.0 --public 192.168.30.1:3000 --watch-poll --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",

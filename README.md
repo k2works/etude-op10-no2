@@ -152,6 +152,8 @@ npm install babel-loader babel-core babel-preset-es2015 webpack --save-dev
 npm install --save-dev file-loader url-loader
 ```
 
+### Building for Production
+
 ## アプリケーション配置
 
 # 参照 #
@@ -163,3 +165,4 @@ npm install --save-dev file-loader url-loader
 + [Sass loader for webpack](https://github.com/jtangelder/sass-loader)
 + [BABEL](https://github.com/babel/babel)
 + [babel-loader](https://github.com/babel/babel-loader)
++ [Building for Production](https://webpack.js.org/guides/production-build/)

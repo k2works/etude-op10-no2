@@ -33,3 +33,15 @@ function render (name) {
 
   return element;
 }
+
+import jpg from './image.jpg'
+import png from './image.png'
+
+var box = document.getElementById('box')
+var imgJpg = document.createElement('img')
+imgJpg.src = jpg
+box.appendChild(imgJpg)
+
+var imgPng = document.createElement('img')
+imgPng.src = png
+box.appendChild(imgPng)

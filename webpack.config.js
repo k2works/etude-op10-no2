@@ -23,6 +23,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader?sourceMap')
     　},
+      {      
+      test: /\.(jpg|png)$/,
+      loaders: 'url-loader'
+      },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,

@@ -147,6 +147,11 @@ npm install node-sass sass-loader --save-dev
 npm install babel-loader babel-core babel-preset-es2015 webpack --save-dev
 ```
 
+#### Bundle image
+```
+npm install --save-dev file-loader url-loader
+```
+
 ## アプリケーション配置
 
 # 参照 #

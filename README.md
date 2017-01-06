@@ -142,6 +142,11 @@ npm i --save-dev extract-text-webpack-plugin
 npm install node-sass sass-loader --save-dev
 ```
 
+#### Using babel-loader
+```
+npm install babel-loader babel-core babel-preset-es2015 webpack --save-dev
+```
+
 ## アプリケーション配置
 
 # 参照 #
@@ -151,3 +156,5 @@ npm install node-sass sass-loader --save-dev
 + [css loader for webpack](https://github.com/webpack/css-loader)
 + [extract text plugin for webpack 2](https://github.com/webpack/extract-text-webpack-plugin)
 + [Sass loader for webpack](https://github.com/jtangelder/sass-loader)
++ [BABEL](https://github.com/babel/babel)
++ [babel-loader](https://github.com/babel/babel-loader)

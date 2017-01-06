@@ -22,7 +22,15 @@ module.exports = {
         test: /\.scss$/,
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract('css-loader!sass-loader?sourceMap')
-    　}
+    　},
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      }
   　]
   },
   devtool: 'source-map',

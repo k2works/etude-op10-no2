@@ -1,7 +1,9 @@
 import './index.css';
 require("./index.scss");
 import _ from 'lodash'
+let contents = document.getElementById('contents')
 
+// Render Hello ,webpack
 function component () {
   var element = document.createElement('div');
 
@@ -13,7 +15,7 @@ function component () {
   return element;
 }
 
-document.body.appendChild(component());
+contents.appendChild(component());
 
 // ES2015 arrow function
 [1,2,3].map(n => console.log(n + 1));
@@ -22,8 +24,9 @@ document.body.appendChild(component());
 import Human from './Human';
 var obj = new Human('BABEL');
 var name = obj.hello();
-document.body.appendChild(render(name));
+contents.appendChild(render(name));
 
+// Render ES2015 Class Object name
 function render (name) {
   var element = document.createElement('div');
   element.setAttribute('class', 'Contents__name');
@@ -34,6 +37,7 @@ function render (name) {
   return element;
 }
 
+// Rnder Images
 import jpg from './image.jpg'
 import png from './image.png'
 

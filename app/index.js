@@ -1,4 +1,5 @@
 import './index.css';
+require("./index.scss");
 import _ from 'lodash'
 
 function component () {

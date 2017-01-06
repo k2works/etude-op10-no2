@@ -137,9 +137,17 @@ npm install css-loader --save-dev
 npm i --save-dev extract-text-webpack-plugin
 ```
 
+#### Using sass-loaders
+```
+npm install node-sass sass-loader --save-dev
+```
+
 ## アプリケーション配置
 
 # 参照 #
 + [Getting Started](https://webpack.js.org/get-started/)
 + [Development](https://webpack.js.org/guides/development/)
 + [Code Splitting - CSS](https://webpack.js.org/guides/code-splitting-css/)
++ [css loader for webpack](https://github.com/webpack/css-loader)
++ [extract text plugin for webpack 2](https://github.com/webpack/extract-text-webpack-plugin)
++ [Sass loader for webpack](https://github.com/jtangelder/sass-loader)

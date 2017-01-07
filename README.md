@@ -1,6 +1,8 @@
 Étude Op. 10, No. 2 Chromatique
 ===================
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 # 目的 #
 webpackを使ったNodeアプリケーションの開発
 

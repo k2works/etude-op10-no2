@@ -1,8 +1,7 @@
 {
   "name": "vagrant",
   "version": "1.0.0",
-  "description": "Étude Op. 10, No. 2 Chromatique ===================",
-  "main": "index.js",
+  "description": "Étude Op. 10, No. 2 Chromatique",
   "dependencies": {
     "express": "^4.14.0",
     "loadash": "0.0.1"

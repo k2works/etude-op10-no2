@@ -1,3 +1,5 @@
+// @flow
+
 import assert from 'power-assert';
 import Human from '../app/human';
 
@@ -23,7 +25,7 @@ describe('ES6 demo', () => {
 
     it('is Human', () => {
         var obj = new Human('BABEL');
-        var name = obj.hello();
+        var name: string = obj.hello();
         assert(name == "My name is't BABEL");
     });
 });

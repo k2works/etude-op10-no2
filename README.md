@@ -164,6 +164,24 @@ npmスクリプトを追加
 npm run build
 ```
 
+### テスト環境セットアップ
+```
+npm install mocha --save-dev
+```
+
+```
+npm install power-assert babel-plugin-espower --save-dev
+```
+
+`.babelrc`を追加
+
+testを追加して動作を確認
+```
+mocha --require babel-register test/demo_test.js
+```
+
+`test/mocha.opts`に実行パラメータを設定する
+
 ## アプリケーション配置
 ビルドした内容をコミットしてHerokuにデプロイする
 ```
@@ -184,3 +202,5 @@ git push heroku master
 + [babel-loader](https://github.com/babel/babel-loader)
 + [Building for Production](https://webpack.js.org/guides/production-build/)
 + [Deploying your React app to Heroku with Webpack](http://ditrospecta.com/javascript/react/es6/webpack/heroku/2015/08/08/deploying-react-webpack-heroku.html)
++ [BabelでES6で書いて、webpackでビルドして、mochaでテスト書いて、power-assertでassertの出力を見やすくして、karmaで複数ブラウザのテストを自動化して、カバレッジを出力するようにした](http://system.blog.uuum.jp/entry/2016/09/16/110000)
++ [babel-plugin-espower](https://github.com/power-assert-js/babel-plugin-espower)

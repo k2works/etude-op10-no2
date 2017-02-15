@@ -1,7 +1,7 @@
 {
   "name": "vagrant",
   "version": "1.0.0",
-  "description": "Étude Op. 10, No. 2 Chromatique",
+  "description": "Étude Op. 10, No. 9",
   "dependencies": {
     "express": "^4.14.0",
     "loadash": "0.0.1"
@@ -30,7 +30,7 @@
   "scripts": {
     "test": "mocha",
     "build": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
-    "start": "node ./app/app.js",
+    "start": "node ./src/app.js",
     "start:dev": "webpack-dev-server --host 0.0.0.0 --public 192.168.30.1:3000 --watch-poll --config webpack.dev.config.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },

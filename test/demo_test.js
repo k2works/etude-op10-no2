@@ -1,7 +1,7 @@
 // @flow
 
 import assert from 'power-assert';
-import Human from '../app/human';
+import Human from '../src/lib/human';
 
 describe('ES6 demo', () => {
 

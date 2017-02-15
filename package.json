@@ -1,7 +1,7 @@
 {
   "name": "vagrant",
   "version": "1.0.0",
-  "description": "Étude Op. 10, No. 9",
+  "description": "Étude Op. 10, No. 2",
   "dependencies": {
     "express": "^4.14.0",
     "loadash": "0.0.1"

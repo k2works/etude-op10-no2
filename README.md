@@ -21,6 +21,18 @@ webpackを使ったNodeアプリケーションのパッケージ開発基盤
 1. [開発](#開発)
 
 ## 構築
+### 開発環境
+```bash
+vagrant up
+vagrant ssh
+```
+
+### npmパッケージセットアップ
+```bash
+cd /vagrant
+npm init -y
+```
+
 **[⬆ back to top](#構成)**
 
 ## 配置

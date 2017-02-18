@@ -1,0 +1,20 @@
+{
+  "name": "etude-op10-no2",
+  "version": "1.0.0",
+  "description": "Étude Op. 10, No. 2 Chromatique ===================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://k2works@github.com/k2works/etude-op10-no2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2works/etude-op10-no2/issues"
+  },
+  "homepage": "https://github.com/k2works/etude-op10-no2#readme"
+}

@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -44,6 +45,12 @@ module.exports = {
       new webpack.optimize.DedupePlugin(),
       new webpack.DefinePlugin({'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV), },}),
       new webpack.optimize.UglifyJsPlugin({minimize: true,compress: {warnings: false,}}),
-      new ManifestPlugin()
+      new ManifestPlugin(),
+      new CleanWebpackPlugin(['dist', 'build', 'public'], {
+          root: '/',
+          verbose: true,
+          dry: false,
+          exclude: ['manifest.json']
+      })
   ]
 }

@@ -52,7 +52,7 @@ npm install webpack-dev-middleware --save-dev
 
 ##### Using css-loaders
 ```bash
-npm install css-loader --save-dev
+npm install css-loader --save
 ```
 
 ##### Using extract-text-webpack-plugin - ExtractTextPlugin

@@ -2,7 +2,7 @@
 ===================
 
 # 目的 #
-webpackを使ったNodeアプリケーションのパッケージ開発基盤
+webpackを使ったNodeアプリケーションの開発基盤構築
 
 # 前提 #
 | ソフトウェア   | バージョン   | 備考        |
@@ -32,6 +32,16 @@ vagrant ssh
 cd /vagrant
 npm init -y
 ```
+
+#### Express
+```bash
+npm install express-generator -g
+express -e .
+npm install
+npm start
+```
+
+`http://127.0.0.0:3000`で動作を確認する
 
 **[⬆ back to top](#構成)**
 

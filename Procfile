@@ -1,1 +1,1 @@
-web: node ./bin/www
+web: $(npm bin)/babel-node ./bin/www

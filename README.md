@@ -90,9 +90,14 @@ npm run build
 **[⬆ back to top](#構成)**
 
 ## 配置
-ビルドした内容をコミットしてHerokuにデプロイする
+```bash
+npm install babel-cli --save
+npm install babel-preset-es2015 --save
 ```
-heroku crate op10-no2
+
+ビルドした内容をコミットしてHerokuにデプロイする
+```bash
+heroku create op10-no2
 git push heroku master
 ```
 
@@ -104,19 +109,19 @@ git push heroku master
 npm install --save-dev lodash
 ```
 ### テスト
-```
+```bash
 npm install mocha --save-dev
 ```
 
-```
-npm install power-assert babel-plugin-espower --save-dev
-npm install babel-plugin-transform-flow-strip-types --save-dev
+```bash
+npm install power-assert babel-plugin-espower --save
+npm install babel-plugin-transform-flow-strip-types --save
 ```
 
 `.babelrc`を追加
 
 testを追加して動作を確認
-```
+```bash
 npm test
 ```
 

@@ -43,4 +43,17 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// webpack
+if (process.env.NODE_ENV !== 'production') {
+    const webpack = require('webpack');
+    const webpackDevMiddleware = require('webpack-dev-middleware');
+    const config = require('./webpack.dev.config.js');
+    const compiler = webpack(config);
+
+    app.use(webpackDevMiddleware(compiler, {
+        noInfo: true,
+        publicPath: config.output.publicPath
+    }))
+}
+
 module.exports = app;

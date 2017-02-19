@@ -41,6 +41,48 @@ npm install
 npm start
 ```
 
+#### webpack
+```bash
+npm install webpack@beta --save-dev
+npm install webpack-dev-server --save-dev
+npm install webpack-dev-middleware --save-dev
+
+```
+
+##### Using css-loaders
+```bash
+npm install css-loader --save-dev
+```
+
+##### Using extract-text-webpack-plugin - ExtractTextPlugin
+```bash
+npm install extract-text-webpack-plugin@2.0.0-rc.3 --save-dev
+```
+
+##### Using sass-loaders
+```bash
+npm install node-sass sass-loader --save-dev
+```
+
+##### Using babel-loader
+```bash
+npm install babel-loader babel-core babel-preset-es2015 --save-dev
+```
+
+##### Bundle image
+```bash
+npm install --save-dev file-loader url-loader
+```
+
+#### Building for Production
+```bash
+npm install --save-dev webpack-manifest-plugin
+```
+npmスクリプトを追加
+```bash
+npm run build
+```
+
 `http://127.0.0.0:3000`で動作を確認する
 
 **[⬆ back to top](#構成)**

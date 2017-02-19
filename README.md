@@ -90,6 +90,12 @@ npm run build
 **[⬆ back to top](#構成)**
 
 ## 配置
+ビルドした内容をコミットしてHerokuにデプロイする
+```
+heroku crate op10-no2
+git push heroku master
+```
+
 **[⬆ back to top](#構成)**
 
 ## 開発

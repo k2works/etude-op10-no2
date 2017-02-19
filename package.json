@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:dev": "webpack-dev-server --host 0.0.0.0 --public 192.168.30.1:3000 --watch-poll --config webpack.dev.config.js",
-    "build": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors"
+    "build": "NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors",
+    "test": "mocha"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -21,11 +22,16 @@
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-plugin-espower": "^2.3.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
     "node-sass": "^4.5.0",
+    "power-assert": "^1.4.2",
     "sass-loader": "^6.0.1",
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0",

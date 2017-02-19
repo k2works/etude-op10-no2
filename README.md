@@ -99,6 +99,27 @@ git push heroku master
 **[⬆ back to top](#構成)**
 
 ## 開発
+### アプリケーション
+```bash
+npm install --save-dev lodash
+```
+### テスト
+```
+npm install mocha --save-dev
+```
+
+```
+npm install power-assert babel-plugin-espower --save-dev
+npm install babel-plugin-transform-flow-strip-types --save-dev
+```
+
+`.babelrc`を追加
+
+testを追加して動作を確認
+```
+npm test
+```
+
 **[⬆ back to top](#構成)**
 
 # 参照 #
